@@ -11,7 +11,7 @@ services:
 #    volumes:
 #      - influxdb_data:/var/lib/influxdb
   grafana:
-    build: grafana
+    image: grafana/grafana:latest
     restart: always
     env_file: configuration.env
     depends_on:

@@ -19,10 +19,7 @@ services:
     ports:
       - '3002:3000'
     volumes:
-      - ./grafana/datasources:/etc/grafana/datasources
       - ./grafana/datasources:/etc/grafana/provisioning/datasources
-      - ./grafana/datasources:/usr/share/grafana/datasources
-#      - grafana_data:/var/lib/grafana
 
 volumes:
   grafana_data: {}

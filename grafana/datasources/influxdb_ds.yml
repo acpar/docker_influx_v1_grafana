@@ -1,0 +1,10 @@
+datasources:
+  - name: InfluxDB
+    access: proxy
+    type: influxdb
+    url: http://influxdb:8086
+    isDefault: true
+    "database": "graphite"
+    "user": "admin"
+    "password": "admin"
+    "basicAuth": false
